@@ -1,0 +1,143 @@
+/* =======================
+   ESTILOS GLOBALES BANCO UMG
+   ======================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #1e90ff 0%, #007acc 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Tarjeta principal */
+.auth-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 30px;
+  max-width: 380px;
+  width: 100%;
+  text-align: left;
+}
+
+/* Cabecera */
+.auth-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #222;
+}
+.brand__dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: gold;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+/* Título */
+.auth-title {
+  text-align: center;
+  color: #cc0000;
+  margin-bottom: 10px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button,
+.btn {
+  display: inline-block;
+  background: #ffb300;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-align: center;
+}
+
+button:hover,
+.btn:hover {
+  background: #f5a000;
+}
+
+.btn--secondary {
+  background: #ddd;
+  color: #222;
+}
+.btn--secondary:hover {
+  background: #bbb;
+}
+
+.w-full {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Alertas */
+.alert {
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.alert--success {
+  background: #d4edda;
+  color: #155724;
+}
+.alert--danger {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* =======================
+   RESPONSIVE
+   ======================= */
+@media (max-width: 480px) {
+  body {
+    background: linear-gradient(180deg, #1e90ff 0%, #007acc 100%);
+    padding: 10px;
+  }
+
+  .auth-card {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .auth-title {
+    font-size: 1.1em;
+  }
+
+  button, .btn {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

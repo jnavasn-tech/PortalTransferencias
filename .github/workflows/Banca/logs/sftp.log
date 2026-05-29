@@ -1,0 +1,126 @@
+May 29 01:47:21 10.71.60.0 a2913661 Connection from 10.71.60.0 port 61940 on 66.175.237.47 port 22 rdomain ""
+May 29 01:47:21 10.71.60.0 a2913661 Accepted password for a2913661 from 10.71.60.0 port 61940 ssh2
+May 29 01:47:22 10.71.60.0 a2913661 Starting session: subsystem 'sftp' for a2913661 from 10.71.60.0 port 61940 id 0
+May 29 01:47:22 10.71.60.0 a2913661 session opened for local user a2913661 from [10.71.60.0]
+May 29 01:50:11 10.71.60.0 a1595404 Connection from 10.71.60.0 port 58450 on 66.175.237.47 port 22 rdomain ""
+May 29 01:50:13 10.71.60.0 a1595404 Accepted password for a1595404 from 10.71.60.0 port 58450 ssh2
+May 29 01:50:14 10.71.60.0 a1595404 Starting session: subsystem 'sftp' for a1595404 from 10.71.60.0 port 58450 id 0
+May 29 01:50:14 10.71.60.0 a1595404 session opened for local user a1595404 from [10.71.60.0]
+May 29 01:51:25 10.71.60.0 a1595404 open "/banca/.htaccess" flags READ mode 0666
+May 29 01:51:25 10.71.60.0 a1595404 close "/banca/.htaccess" bytes read 1 written 0
+May 29 01:51:25 10.71.60.0 a1595404 [10.71.60.0|get|0|1|0|0|0|2f62616e63612f2e6874616363657373|]
+May 29 01:51:25 10.71.60.0 a1595404 open "/banca/index.php" flags READ mode 0666
+May 29 01:51:26 10.71.60.0 a1595404 close "/banca/index.php" bytes read 5956 written 0
+May 29 01:51:26 10.71.60.0 a1595404 [10.71.60.0|get|1|5956|0|0|0|2f62616e63612f696e6465782e706870|]
+May 29 01:51:26 10.71.60.0 a1595404 open "/banca/test.txt" flags READ mode 0666
+May 29 01:51:26 10.71.60.0 a1595404 close "/banca/test.txt" bytes read 19 written 0
+May 29 01:51:26 10.71.60.0 a1595404 [10.71.60.0|get|0|19|0|0|0|2f62616e63612f746573742e747874|]
+May 29 01:51:26 10.71.60.0 a1595404 open "/banca/seed.php" flags READ mode 0666
+May 29 01:51:27 10.71.60.0 a1595404 close "/banca/seed.php" bytes read 763 written 0
+May 29 01:51:27 10.71.60.0 a1595404 [10.71.60.0|get|1|763|0|0|0|2f62616e63612f736565642e706870|]
+May 29 01:51:27 10.71.60.0 a1595404 open "/banca/admin/dashboard.php" flags READ mode 0666
+May 29 01:51:28 10.71.60.0 a1595404 close "/banca/admin/dashboard.php" bytes read 1674 written 0
+May 29 01:51:28 10.71.60.0 a1595404 [10.71.60.0|get|1|1674|0|0|0|2f62616e63612f61646d696e2f64617368626f6172642e706870|]
+May 29 01:51:28 10.71.60.0 a1595404 open "/banca/admin/gestionar_cajeros.php" flags READ mode 0666
+May 29 01:51:28 10.71.60.0 a1595404 close "/banca/admin/gestionar_cajeros.php" bytes read 3672 written 0
+May 29 01:51:28 10.71.60.0 a1595404 [10.71.60.0|get|0|3672|0|0|0|2f62616e63612f61646d696e2f67657374696f6e61725f63616a65726f732e706870|]
+May 29 01:51:28 10.71.60.0 a1595404 open "/banca/admin/monitor.php" flags READ mode 0666
+May 29 01:51:29 10.71.60.0 a1595404 close "/banca/admin/monitor.php" bytes read 4144 written 0
+May 29 01:51:29 10.71.60.0 a1595404 [10.71.60.0|get|1|4144|0|0|0|2f62616e63612f61646d696e2f6d6f6e69746f722e706870|]
+May 29 01:51:29 10.71.60.0 a1595404 open "/banca/cajero/crear_cuenta.php" flags READ mode 0666
+May 29 01:51:30 10.71.60.0 a1595404 close "/banca/cajero/crear_cuenta.php" bytes read 3505 written 0
+May 29 01:51:30 10.71.60.0 a1595404 [10.71.60.0|get|1|3505|0|0|0|2f62616e63612f63616a65726f2f63726561725f6375656e74612e706870|]
+May 29 01:51:30 10.71.60.0 a1595404 open "/banca/cajero/dashboard.php" flags READ mode 0666
+May 29 01:51:31 10.71.60.0 a1595404 close "/banca/cajero/dashboard.php" bytes read 1698 written 0
+May 29 01:51:31 10.71.60.0 a1595404 [10.71.60.0|get|1|1698|0|0|0|2f62616e63612f63616a65726f2f64617368626f6172642e706870|]
+May 29 01:51:31 10.71.60.0 a1595404 open "/banca/cajero/deposito.php" flags READ mode 0666
+May 29 01:51:31 10.71.60.0 a1595404 close "/banca/cajero/deposito.php" bytes read 3169 written 0
+May 29 01:51:31 10.71.60.0 a1595404 [10.71.60.0|get|0|3169|0|0|0|2f62616e63612f63616a65726f2f6465706f7369746f2e706870|]
+May 29 01:51:31 10.71.60.0 a1595404 open "/banca/cajero/retiro.php" flags READ mode 0666
+May 29 01:51:32 10.71.60.0 a1595404 close "/banca/cajero/retiro.php" bytes read 3402 written 0
+May 29 01:51:32 10.71.60.0 a1595404 [10.71.60.0|get|1|3402|0|0|0|2f62616e63612f63616a65726f2f72657469726f2e706870|]
+May 29 01:51:32 10.71.60.0 a1595404 open "/banca/css/style.css" flags READ mode 0666
+May 29 01:51:32 10.71.60.0 a1595404 close "/banca/css/style.css" bytes read 2235 written 0
+May 29 01:51:32 10.71.60.0 a1595404 [10.71.60.0|get|0|2235|0|0|0|2f62616e63612f6373732f7374796c652e637373|]
+May 29 01:51:33 10.71.60.0 a1595404 open "/banca/img/josue.png" flags READ mode 0666
+May 29 01:51:33 10.71.60.0 a1595404 close "/banca/img/josue.png" bytes read 31763 written 0
+May 29 01:51:33 10.71.60.0 a1595404 [10.71.60.0|get|0|31763|0|0|0|2f62616e63612f696d672f6a6f7375652e706e67|]
+May 29 01:51:33 10.71.60.0 a1595404 open "/banca/img/marlon.png" flags READ mode 0666
+May 29 01:51:34 10.71.60.0 a1595404 close "/banca/img/marlon.png" bytes read 29956 written 0
+May 29 01:51:34 10.71.60.0 a1595404 [10.71.60.0|get|1|29956|0|0|0|2f62616e63612f696d672f6d61726c6f6e2e706e67|]
+May 29 01:51:34 10.71.60.0 a1595404 open "/banca/img/william.png" flags READ mode 0666
+May 29 01:51:35 10.71.60.0 a1595404 close "/banca/img/william.png" bytes read 78875 written 0
+May 29 01:51:35 10.71.60.0 a1595404 [10.71.60.0|get|1|78875|0|0|0|2f62616e63612f696d672f77696c6c69616d2e706e67|]
+May 29 01:51:35 10.71.60.0 a1595404 open "/banca/usuario/agregar_tercero.php" flags READ mode 0666
+May 29 01:51:36 10.71.60.0 a1595404 close "/banca/usuario/agregar_tercero.php" bytes read 3592 written 0
+May 29 01:51:36 10.71.60.0 a1595404 [10.71.60.0|get|1|3592|0|0|0|2f62616e63612f7573756172696f2f616772656761725f7465726365726f2e706870|]
+May 29 01:51:36 10.71.60.0 a1595404 open "/banca/usuario/dashboard.php" flags READ mode 0666
+May 29 01:51:36 10.71.60.0 a1595404 close "/banca/usuario/dashboard.php" bytes read 1864 written 0
+May 29 01:51:36 10.71.60.0 a1595404 [10.71.60.0|get|0|1864|0|0|0|2f62616e63612f7573756172696f2f64617368626f6172642e706870|]
+May 29 01:51:36 10.71.60.0 a1595404 open "/banca/usuario/estado_cuenta.php" flags READ mode 0666
+May 29 01:51:37 10.71.60.0 a1595404 close "/banca/usuario/estado_cuenta.php" bytes read 3896 written 0
+May 29 01:51:37 10.71.60.0 a1595404 [10.71.60.0|get|1|3896|0|0|0|2f62616e63612f7573756172696f2f65737461646f5f6375656e74612e706870|]
+May 29 01:51:37 10.71.60.0 a1595404 open "/banca/usuario/transferir.php" flags READ mode 0666
+May 29 01:51:37 10.71.60.0 a1595404 close "/banca/usuario/transferir.php" bytes read 6594 written 0
+May 29 01:51:37 10.71.60.0 a1595404 [10.71.60.0|get|0|6594|0|0|0|2f62616e63612f7573756172696f2f7472616e7366657269722e706870|]
+May 29 01:51:37 10.71.60.0 a1595404 open "/banca/Instucciones.txt" flags READ mode 0666
+May 29 01:51:38 10.71.60.0 a1595404 close "/banca/Instucciones.txt" bytes read 853 written 0
+May 29 01:51:38 10.71.60.0 a1595404 [10.71.60.0|get|1|853|0|0|0|2f62616e63612f496e7374756363696f6e65732e747874|]
+May 29 01:51:38 10.71.60.0 a1595404 open "/banca/login_admin.php" flags READ mode 0666
+May 29 01:51:38 10.71.60.0 a1595404 close "/banca/login_admin.php" bytes read 2000 written 0
+May 29 01:51:38 10.71.60.0 a1595404 [10.71.60.0|get|0|2000|0|0|0|2f62616e63612f6c6f67696e5f61646d696e2e706870|]
+May 29 01:51:38 10.71.60.0 a1595404 open "/banca/login_cajero.php" flags READ mode 0666
+May 29 01:51:39 10.71.60.0 a1595404 close "/banca/login_cajero.php" bytes read 2082 written 0
+May 29 01:51:39 10.71.60.0 a1595404 [10.71.60.0|get|1|2082|0|0|0|2f62616e63612f6c6f67696e5f63616a65726f2e706870|]
+May 29 01:51:39 10.71.60.0 a1595404 open "/banca/login_usuario.php" flags READ mode 0666
+May 29 01:51:39 10.71.60.0 a1595404 close "/banca/login_usuario.php" bytes read 2088 written 0
+May 29 01:51:39 10.71.60.0 a1595404 [10.71.60.0|get|0|2088|0|0|0|2f62616e63612f6c6f67696e5f7573756172696f2e706870|]
+May 29 01:51:39 10.71.60.0 a1595404 open "/banca/logout.php" flags READ mode 0666
+May 29 01:51:40 10.71.60.0 a1595404 close "/banca/logout.php" bytes read 489 written 0
+May 29 01:51:40 10.71.60.0 a1595404 [10.71.60.0|get|1|489|0|0|0|2f62616e63612f6c6f676f75742e706870|]
+May 29 01:51:40 10.71.60.0 a1595404 open "/banca/phpinfo.php" flags READ mode 0666
+May 29 01:51:40 10.71.60.0 a1595404 close "/banca/phpinfo.php" bytes read 18 written 0
+May 29 01:51:40 10.71.60.0 a1595404 [10.71.60.0|get|0|18|0|0|0|2f62616e63612f706870696e666f2e706870|]
+May 29 01:51:40 10.71.60.0 a1595404 open "/banca/registro_usuario.php" flags READ mode 0666
+May 29 01:51:41 10.71.60.0 a1595404 close "/banca/registro_usuario.php" bytes read 4483 written 0
+May 29 01:51:41 10.71.60.0 a1595404 [10.71.60.0|get|1|4483|0|0|0|2f62616e63612f726567697374726f5f7573756172696f2e706870|]
+May 29 01:51:41 10.71.60.0 a1595404 open "/db/db.php" flags READ mode 0666
+May 29 01:51:42 10.71.60.0 a1595404 close "/db/db.php" bytes read 454 written 0
+May 29 01:51:42 10.71.60.0 a1595404 [10.71.60.0|get|1|454|0|0|0|2f64622f64622e706870|]
+May 29 01:51:42 10.71.60.0 a1595404 open "/logs/traffic.db" flags READ mode 0666
+May 29 01:51:43 10.71.60.0 a1595404 close "/logs/traffic.db" bytes read 24576 written 0
+May 29 01:51:43 10.71.60.0 a1595404 [10.71.60.0|get|1|24576|0|0|0|2f6c6f67732f747261666669632e6462|]
+May 29 01:51:43 10.71.60.0 a1595404 open "/logs/access.log.21.7.gz" flags READ mode 0666
+May 29 01:51:43 10.71.60.0 a1595404 close "/logs/access.log.21.7.gz" bytes read 2914 written 0
+May 29 01:51:43 10.71.60.0 a1595404 [10.71.60.0|get|0|2914|0|0|0|2f6c6f67732f6163636573732e6c6f672e32312e372e677a|]
+May 29 01:51:43 10.71.60.0 a1595404 open "/logs/access.log.18.gz" flags READ mode 0666
+May 29 01:51:44 10.71.60.0 a1595404 close "/logs/access.log.18.gz" bytes read 31761 written 0
+May 29 01:51:44 10.71.60.0 a1595404 [10.71.60.0|get|1|31761|0|0|0|2f6c6f67732f6163636573732e6c6f672e31382e677a|]
+May 29 01:51:44 10.71.60.0 a1595404 open "/logs/access.log.19.gz" flags READ mode 0666
+May 29 01:51:45 10.71.60.0 a1595404 close "/logs/access.log.19.gz" bytes read 63887 written 0
+May 29 01:51:45 10.71.60.0 a1595404 [10.71.60.0|get|1|63887|0|0|0|2f6c6f67732f6163636573732e6c6f672e31392e677a|]
+May 29 01:51:45 10.71.60.0 a1595404 open "/logs/access.log.20.gz" flags READ mode 0666
+May 29 01:51:45 10.71.60.0 a1595404 close "/logs/access.log.20.gz" bytes read 23764 written 0
+May 29 01:51:45 10.71.60.0 a1595404 [10.71.60.0|get|0|23764|0|0|0|2f6c6f67732f6163636573732e6c6f672e32302e677a|]
+May 29 01:51:45 10.71.60.0 a1595404 open "/logs/access.log.14.gz" flags READ mode 0666
+May 29 01:51:46 10.71.60.0 a1595404 close "/logs/access.log.14.gz" bytes read 21130 written 0
+May 29 01:51:46 10.71.60.0 a1595404 [10.71.60.0|get|1|21130|0|0|0|2f6c6f67732f6163636573732e6c6f672e31342e677a|]
+May 29 01:51:46 10.71.60.0 a1595404 open "/logs/access.log.16.gz" flags READ mode 0666
+May 29 01:51:47 10.71.60.0 a1595404 close "/logs/access.log.16.gz" bytes read 61135 written 0
+May 29 01:51:47 10.71.60.0 a1595404 [10.71.60.0|get|1|61135|0|0|0|2f6c6f67732f6163636573732e6c6f672e31362e677a|]
+May 29 01:51:47 10.71.60.0 a1595404 open "/logs/access.log.21.2.gz" flags READ mode 0666
+May 29 01:51:47 10.71.60.0 a1595404 close "/logs/access.log.21.2.gz" bytes read 3032 written 0
+May 29 01:51:47 10.71.60.0 a1595404 [10.71.60.0|get|0|3032|0|0|0|2f6c6f67732f6163636573732e6c6f672e32312e322e677a|]
+May 29 01:51:47 10.71.60.0 a1595404 open "/logs/access.log.21.4.gz" flags READ mode 0666
+May 29 01:51:48 10.71.60.0 a1595404 close "/logs/access.log.21.4.gz" bytes read 1465 written 0
+May 29 01:51:48 10.71.60.0 a1595404 [10.71.60.0|get|1|1465|0|0|0|2f6c6f67732f6163636573732e6c6f672e32312e342e677a|]
+May 29 01:51:48 10.71.60.0 a1595404 open "/logs/access.log.22.1.gz" flags READ mode 0666
+May 29 01:51:48 10.71.60.0 a1595404 close "/logs/access.log.22.1.gz" bytes read 18253 written 0
+May 29 01:51:48 10.71.60.0 a1595404 [10.71.60.0|get|0|18253|0|0|0|2f6c6f67732f6163636573732e6c6f672e32322e312e677a|]
+May 29 01:51:48 10.71.60.0 a1595404 open "/logs/access.log.22.3.gz" flags READ mode 0666
+May 29 01:51:49 10.71.60.0 a1595404 close "/logs/access.log.22.3.gz" bytes read 2344 written 0
+May 29 01:51:49 10.71.60.0 a1595404 [10.71.60.0|get|1|2344|0|0|0|2f6c6f67732f6163636573732e6c6f672e32322e332e677a|]
+May 29 01:51:49 10.71.60.0 a1595404 open "/logs/access.log.current" flags READ mode 0666
+May 29 01:51:49 10.71.60.0 a1595404 close "/logs/access.log.current" bytes read 15866 written 0
+May 29 01:51:49 10.71.60.0 a1595404 [10.71.60.0|get|0|15866|0|0|0|2f6c6f67732f6163636573732e6c6f672e63757272656e74|]
+May 29 01:51:49 10.71.60.0 a1595404 open "/logs/sftp.log" flags READ mode 0666
