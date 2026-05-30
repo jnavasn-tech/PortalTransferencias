@@ -1,39 +1,84 @@
-name: PHP Composer
+name: PHP CI - Banca
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
+      - master
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
+      - master
+  workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
-  build:
-
+  validar-php:
+    name: Validar proyecto PHP
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
 
-    - name: Validate composer.json and composer.lock
-      run: composer validate --strict
+      - name: Configurar PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          extensions: mysqli, mbstring
+          coverage: none
 
-    - name: Cache Composer packages
-      id: composer-cache
-      uses: actions/cache@v3
-      with:
-        path: vendor
-        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-php-
+      - name: Mostrar versión de PHP
+        run: php -v
 
-    - name: Install dependencies
-      run: composer install --prefer-dist --no-progress
+      - name: Instalar dependencias si existe Composer
+        shell: bash
+        run: |
+          if [ -f composer.json ]; then
+            composer install --no-interaction --prefer-dist --no-progress
+          else
+            echo "No existe composer.json; se omite instalación de Composer."
+          fi
 
-    # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
-    # Docs: https://getcomposer.org/doc/articles/scripts.md
+      - name: Validar sintaxis de archivos PHP
+        shell: bash
+        run: |
+          set -e
+          mapfile -d '' PHP_FILES < <(find . \
+            -path './vendor' -prune -o \
+            -name '*.php' -print0)
+
+          if [ ${#PHP_FILES[@]} -eq 0 ]; then
+            echo "No se encontraron archivos PHP."
+            exit 0
+          fi
+
+          for file in "${PHP_FILES[@]}"; do
+            echo "Validando $file"
+            php -l "$file"
+          done
+
+      - name: Revisar archivos sensibles recomendados para no publicar
+        shell: bash
+        run: |
+          echo "Revisión preventiva de archivos que normalmente no deberían subirse al repositorio:"
+          find . -type f \( \
+            -name 'phpinfo.php' -o \
+            -name '*.log' -o \
+            -name '*.gz' -o \
+            -name 'traffic.db' \
+          \) -print || true
+
+      - name: Revisar posibles credenciales escritas en código
+        shell: bash
+        run: |
+          echo "Buscando posibles credenciales hardcodeadas. Esta revisión es informativa y no bloquea el workflow."
+          grep -RInE "(password\s*=|user_name\s*=|host_name\s*=|database\s*=|Banca-123)" . \
+            --include="*.php" \
+            --exclude-dir=".git" \
+            --exclude-dir="vendor" || true
 
     # - name: Run test suite
     #   run: composer run-script test
