@@ -1,7 +1,21 @@
 <?php
 // portal_transferencias.php
 session_start();
-require_once "db.php";
+header('Content-Type: text/html; charset=utf-8');
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+$host_name = 'db5018789145.hosting-data.io';
+$database  = 'dbs14848135';
+$user_name = 'dbu3208202';
+$password  = 'Banca-123.';
+$conn = new mysqli($host_name, $user_name, $password, $database);
+if ($conn->connect_error) { die('MySQL error: ' . $conn->connect_error); }
+$conn->set_charset('utf8mb4');
+
+if (!isset($_SESSION['usuario_id'])) {
+    header("Location: portal_transferencias.php");
+exit;
 
 /* ---------- CSRF ---------- */
 if (empty($_SESSION['csrf'])) { $_SESSION['csrf'] = bin2hex(random_bytes(32)); }
