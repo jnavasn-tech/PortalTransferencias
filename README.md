@@ -1,3 +1,32 @@
 # PortalTransferencias
 
 pruebas realizadas con exito 
+
+Ingreso como administrador 
+usuario: admin
+clave: Admin123!
+
+Ingreso como cajero
+usuario: cajero1
+Clave: Cajero123!
+
+Dentro de usuario administrador se crea usuarios para cajeros, monitoreos  
+con el monitoreo se puede filtar por dia o por un tipo de rango al escoger dia veremos los indicadores, 
+al escoger por un rango especifico tenemos que borrar el calendario de un solo dia para que este no afecte el rango  
+
+Dentro de usuario cajero se crea usuario y se relaiza depositos y retiros 
+
+Dentro de usuario de los clientes puede realizar transferencias a otras cuentas ver estados de cuentas  
+el usuario cliente crea su cuenta si este ya fue creado por el cajero con el numero de DPI correcto
+en la pantalla principal 
+
+puede ingresar a su usuarios, si este ya esta creado por el cajero, se tiene que crear usuario nuevo en usuarios para generar su perfil 
+como primera vez
+
+Con el ingreso a la base de datos se deja con el usuario ROOT 
+
+se agrega base de datos para ser importada 
+
+
+ingreso al portal 
+https://banca.proyectosuni.info/ 
