@@ -16,6 +16,7 @@ $conn->set_charset('utf8mb4');
 if (!isset($_SESSION['usuario_id'])) {
     header("Location: portal_transferencias.php");
 exit;
+}
 
 /* ---------- CSRF ---------- */
 if (empty($_SESSION['csrf'])) { $_SESSION['csrf'] = bin2hex(random_bytes(32)); }
